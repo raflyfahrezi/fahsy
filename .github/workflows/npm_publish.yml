@@ -20,6 +20,9 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v1
 
+            - name: 'Building Project'
+              run: npm run rollup
+
             - name: publishing project to NPM
               run: npm publish
               env:
