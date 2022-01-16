@@ -17,12 +17,10 @@ jobs:
 
         steps:
             # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
-            - uses: actions/checkout@v1
-
-            - name: Set Access Token
-              env:
-                  NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-              run: npm config set_authToken=$NPM_AUTH_TOKEN
+            - name: Checkout Repository
+              uses: actions/checkout@v1
 
             - name: publishing project to NPM
               run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
