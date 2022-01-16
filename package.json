@@ -12,8 +12,8 @@
         "dist"
     ],
     "scripts": {
-        "rollup": "rollup -c",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest",
+        "rollup": "rollup -c"
     },
     "repository": {
         "type": "git",
@@ -27,11 +27,21 @@
         "url": "https://github.com/raflyfahrezi/fahsssy/issues"
     },
     "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/preset-env": "^7.16.8",
+        "@babel/preset-react": "^7.16.7",
+        "@babel/preset-typescript": "^7.16.7",
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-node-resolve": "^13.1.3",
         "@rollup/plugin-typescript": "^8.3.0",
+        "@testing-library/react": "^12.1.2",
+        "@types/jest": "^27.4.0",
         "@types/react": "^17.0.38",
+        "babel-jest": "^27.4.6",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^27.4.7",
         "react": "^17.0.2",
+        "react-dom": "^17.0.2",
         "rollup": "^2.64.0",
         "rollup-plugin-dts": "^4.1.0",
         "tslib": "^2.3.1",
