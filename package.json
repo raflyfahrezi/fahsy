@@ -1,0 +1,28 @@
+{
+  "name": "fahsssy",
+  "version": "1.0.0",
+  "description": "Farhan Rafly Fahrezi S Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raflyfahrezi/fahsssy.git"
+  },
+  "keywords": [
+    "design",
+    "system"
+  ],
+  "author": "Farhan Rafly Fahrezi S <raflyfahr15@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raflyfahrezi/fahsssy/issues"
+  },
+  "homepage": "https://github.com/raflyfahrezi/fahsssy#readme",
+  "dependencies": {
+    "@types/react": "^17.0.38",
+    "react": "^17.0.2",
+    "typescript": "^4.5.4"
+  }
+}
