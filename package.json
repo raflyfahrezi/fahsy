@@ -12,8 +12,8 @@
         "dist"
     ],
     "scripts": {
-        "rollup": "rollup -c",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest",
+        "rollup": "rollup -c"
     },
     "repository": {
         "type": "git",
