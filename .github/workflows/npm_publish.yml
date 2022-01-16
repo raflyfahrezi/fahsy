@@ -3,12 +3,8 @@ name: 'NPM Publish'
 
 # Only running when
 on:
-    pull_request:
-        branches:
-            - master
-    push:
-        branches:
-            - master
+    release:
+        types: [created]
 
 jobs:
     publish:
