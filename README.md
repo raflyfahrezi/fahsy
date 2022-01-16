@@ -1,7 +1,17 @@
-## fahssy
+<div align="center">
+
+# fahssy
+
+</div>
 
 [![NPM Publish](https://github.com/raflyfahrezi/fahsssy/actions/workflows/npm_publish.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/npm_publish.yml)
+[![Build](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml)
+[![Testing](https://github.com/raflyfahrezi/fahsssy/actions/workflows/testing.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/testing.yml)
 
-[![Build](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml)
+Design System for Farhan Rafly Fahrezi S apps ecosystem.
 
-Farhan Rafly Fahrezi S Design System
+## Typography
+
+## Colors
+
+## Products
