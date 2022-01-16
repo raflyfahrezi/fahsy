@@ -1,0 +1,18 @@
+# CI Name
+name: 'NPM Publish'
+
+# Only running when
+on:
+    merge_request:
+        branches:
+            - master
+
+jobs:
+    build:
+        # Running on latest version of Ubuntu
+        runs-on: ubuntu-latest
+
+        steps:
+            # Publish NPM
+            - name: publishing NPM
+            - run: npm publish
