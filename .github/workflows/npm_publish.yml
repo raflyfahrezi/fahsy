@@ -26,4 +26,4 @@ jobs:
               run: npm config set registry https://registry.npmjs.org
 
             - name: publishing project to NPM
-              run: npm publish
+              run: npm publish --token=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
