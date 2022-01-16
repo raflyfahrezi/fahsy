@@ -5,7 +5,7 @@
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "files": [
-      "dist"
+        "dist"
     ],
     "types": "dist/index.d.ts",
     "scripts": {
@@ -26,7 +26,7 @@
         "url": "https://github.com/raflyfahrezi/fahsssy/issues"
     },
     "homepage": "https://github.com/raflyfahrezi/fahsssy#readme",
-    "dependencies": {
+    "devDependencies": {
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-node-resolve": "^13.1.3",
         "@rollup/plugin-typescript": "^8.3.0",
