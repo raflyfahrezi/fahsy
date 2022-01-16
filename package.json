@@ -1,13 +1,16 @@
 {
+    "license": "ISC",
     "name": "fahsssy",
     "version": "1.0.0",
-    "description": "Design System for Farhan Rafly Fahrezi S apps ecosystem",
+    "types": "dist/index.d.ts",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
+    "author": "Farhan Rafly Fahrezi S <raflyfahr15@gmail.com>",
+    "homepage": "https://github.com/raflyfahrezi/fahsssy#readme",
+    "description": "Design System for Farhan Rafly Fahrezi S apps ecosystem",
     "files": [
         "dist"
     ],
-    "types": "dist/index.d.ts",
     "scripts": {
         "rollup": "rollup -c",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,12 +23,12 @@
         "design",
         "system"
     ],
-    "author": "Farhan Rafly Fahrezi S <raflyfahr15@gmail.com>",
-    "license": "ISC",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/raflyfahrezi"
+    },
     "bugs": {
         "url": "https://github.com/raflyfahrezi/fahsssy/issues"
     },
-    "homepage": "https://github.com/raflyfahrezi/fahsssy#readme",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-node-resolve": "^13.1.3",
