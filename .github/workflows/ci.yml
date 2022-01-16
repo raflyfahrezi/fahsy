@@ -15,7 +15,7 @@ jobs:
         steps:
             # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
             - uses: actions/checkout@v1
-            
+
             # Publish NPM
             - name: publishing NPM
-            run: npm publish
+              run: npm publish
