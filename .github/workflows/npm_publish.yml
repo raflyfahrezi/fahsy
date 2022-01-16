@@ -19,7 +19,10 @@ jobs:
             # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
             - uses: actions/checkout@v1
 
-            - name: publishing project to NPM
+            - name: Set Access Token
               env:
                   NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-              run: npm publish --token=$NPM_AUTH_TOKEN
+              run: npm config set_authToken=$NPM_AUTH_TOKEN
+
+            - name: publishing project to NPM
+              run: npm publish
