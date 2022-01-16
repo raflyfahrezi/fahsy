@@ -8,7 +8,7 @@ on:
             - master
 
 jobs:
-    publish:
+    build:
         # Running on latest version of Ubuntu
         runs-on: ubuntu-latest
 
