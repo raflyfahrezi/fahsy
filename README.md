@@ -12,6 +12,12 @@ Design System for Farhan Rafly Fahrezi S apps ecosystem.
 
 ## Typography
 
+Coming Soon
+
 ## Colors
 
+Coming Soon
+
 ## Products
+
+Coming Soon
