@@ -1,14 +1,18 @@
 # CI Name
-name: 'Build'
+name: 'Testing'
 
 # Only running when
 on:
+    release:
+        types: [created]
+
     pull_request:
         branches:
             - master
+            - dev
 
 jobs:
-    build:
+    testing:
         # Running on latest version of Ubuntu
         runs-on: ubuntu-latest
 
@@ -28,5 +32,5 @@ jobs:
             - name: Installing Dependencies
               run: yarn install
 
-            - name: 'Building Project'
-              run: npm run rollup
+            - name: Testing All Source
+              run: yarn run test
