@@ -20,4 +20,6 @@ jobs:
             - uses: actions/checkout@v1
 
             - name: publishing project to NPM
-              run: npm publish
+              env:
+                  NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+              run: npm publish --token=$NPM_AUTH_TOKEN
