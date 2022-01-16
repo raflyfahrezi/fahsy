@@ -1,7 +1,7 @@
 {
     "name": "fahsssy",
     "version": "1.0.0",
-    "description": "Farhan Rafly Fahrezi S Design System",
+    "description": "Design System for Farhan Rafly Fahrezi S apps ecosystem",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "files": [
