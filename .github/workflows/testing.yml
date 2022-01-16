@@ -1,0 +1,25 @@
+# CI Name
+name: 'Testing'
+
+# Only running when
+on:
+    release:
+        types: [created]
+
+    pull_request:
+        branches:
+            - master
+            - dev
+
+jobs:
+    testing:
+        # Running on latest version of Ubuntu
+        runs-on: ubuntu-latest
+
+        steps:
+            # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
+            - name: Checkout Repository
+              uses: actions/checkout@v2
+
+            - name: Testing All Source
+              run: yarn run test
