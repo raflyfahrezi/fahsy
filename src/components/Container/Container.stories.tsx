@@ -35,4 +35,7 @@ Large.args = {
 export default {
     title: 'Components/Container',
     component: Container,
+    parameters: {
+        controls: { disabled: true },
+    },
 } as ComponentMeta<typeof Container>
