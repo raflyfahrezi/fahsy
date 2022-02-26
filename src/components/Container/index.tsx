@@ -17,6 +17,9 @@ const Container = ({ size, children, ...props }: ContainerPropsInterface) => {
 
             case 'lg':
                 return ContainerSize.lg
+
+            case 'full':
+                return ContainerSize.full
         }
     }
 
