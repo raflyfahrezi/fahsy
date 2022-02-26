@@ -1,25 +1,22 @@
 import React from 'react'
 
 import { ContainerRoot } from './styles'
-import { ContainerProps } from './types'
+import { ContainerPropsInterface, ContainerSize } from './types'
 
-const Container = ({ size, children, ...props }: ContainerProps) => {
+const Container = ({ size, children, ...props }: ContainerPropsInterface) => {
     const getSize = (): string => {
         switch (size) {
             case 'xs':
-                return '480px'
+                return ContainerSize.xs
 
             case 'sm':
-                return '768px'
+                return ContainerSize.sm
 
             case 'md':
-                return '1024px'
+                return ContainerSize.md
 
             case 'lg':
-                return '1200px'
-
-            default:
-                return '1024px'
+                return ContainerSize.lg
         }
     }
 
