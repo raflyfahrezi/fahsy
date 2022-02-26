@@ -1,9 +1,14 @@
 import { ReactNode, HTMLAttributes } from 'react'
 
 // Initialization
-export type ContainerSizeType = 'xs' | 'sm' | 'md' | 'lg'
+export type ContainerSizeType = 'xs' | 'sm' | 'md' | 'lg' | 'full'
 
-export type ContainerSizePixelType = '480px' | '768px' | '1024px' | '1200px'
+export type ContainerSizePixelType =
+    | '480px'
+    | '768px'
+    | '1024px'
+    | '1200px'
+    | '100%'
 
 // Model
 export type ContainerSizeModel = Record<
@@ -17,6 +22,7 @@ export const ContainerSize: ContainerSizeModel = {
     sm: '768px',
     md: '1024px',
     lg: '1200px',
+    full: '100%',
 }
 
 // Styles
