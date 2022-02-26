@@ -19,4 +19,8 @@ describe('Container Testing', () => {
     test('Container size lg should render', () => {
         render(<Container size='lg'>Hello World</Container>)
     })
+
+    test('Container size full should render', () => {
+        render(<Container size='full'>Hello World</Container>)
+    })
 })
