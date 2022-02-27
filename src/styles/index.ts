@@ -1,3 +1,4 @@
-import themes from './themes'
+import Themes from './Themes'
+import Globals from './Globals'
 
-export { themes }
+export { Themes, Globals }
