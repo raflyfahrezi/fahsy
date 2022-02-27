@@ -27,7 +27,7 @@ export const ContainerSize: ContainerSizeModel = {
 
 // Styles
 export type ContainerRootStylesProps = {
-    size: () => string
+    size: ContainerSizePixelType
 }
 
 // Interface

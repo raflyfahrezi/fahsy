@@ -1,7 +1,6 @@
-import React from 'react'
-import { css, Global } from '@emotion/react'
+import { createGlobalStyle } from 'styled-components'
 
-const defaultStylesCSS = css`
+const DefaultStyles = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
@@ -9,9 +8,5 @@ const defaultStylesCSS = css`
         box-sizing: border-box;
     }
 `
-
-const DefaultStyles = () => {
-    return <Global styles={defaultStylesCSS} />
-}
 
 export default DefaultStyles
