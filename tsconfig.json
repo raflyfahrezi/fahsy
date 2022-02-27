@@ -16,6 +16,14 @@
         "declarationDir": "types",
         "moduleResolution": "node",
         "emitDeclarationOnly": true,
-        "allowSyntheticDefaultImports": true
-    }
+        "allowSyntheticDefaultImports": true,
+
+        // Path
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "exclude": ["node_modules"],
+    "include": ["**/*.ts", "**/*.tsx"]
 }
