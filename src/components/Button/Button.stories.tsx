@@ -6,7 +6,6 @@ import Button from './index'
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 
 Primary.args = {
     children: <p>Hello World</p>,
@@ -15,7 +14,11 @@ Primary.args = {
 export default {
     title: 'Components/Button',
     component: Button,
+    args: {
+        fullWidth: false,
+    },
     argTypes: {
-        backgroundColor: { control: 'color' },
+        fullWidth: { control: { type: 'boolean' } },
+        children: { control: false },
     },
 } as ComponentMeta<typeof Button>

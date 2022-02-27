@@ -1,5 +1,12 @@
 import { HTMLAttributes } from 'react'
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-    //
+// Styles
+export type ButtonRootStyles = {
+    fullWidth: boolean
+}
+
+// Interface
+export interface ButtonPropsInterface
+    extends HTMLAttributes<HTMLButtonElement> {
+    fullWidth: boolean
 }
