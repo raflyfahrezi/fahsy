@@ -1,18 +1,14 @@
-import styled from '@emotion/styled'
 import React, { forwardRef } from 'react'
 
-import { ButtonProps } from './types'
+import { ButtonRoot } from './styles'
+import { ButtonPropsInterface } from './types'
 
-const StyledButton = styled['button']`
-    padding: 20px;
-`
-
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-    ({ children, ...rest }: ButtonProps, ref) => {
+const Button = forwardRef<HTMLButtonElement, ButtonPropsInterface>(
+    ({ children, fullWidth, ...rest }: ButtonPropsInterface, ref) => {
         return (
-            <StyledButton ref={ref} {...rest}>
+            <ButtonRoot ref={ref} fullWidth={fullWidth} {...rest}>
                 {children}
-            </StyledButton>
+            </ButtonRoot>
         )
     }
 )
