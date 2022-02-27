@@ -9,10 +9,14 @@ export const ButtonRoot = styled['button']<ButtonRootStyles>`
 
     background-color: ${colors.yellow};
 
-    padding: 0 10px;
+    padding: 0 16px;
 
     border: none;
     border-radius: 6px;
 
     outline: none;
+
+    & > p {
+        font-weight: bold;
+    }
 `
