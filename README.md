@@ -4,6 +4,12 @@
 
 </div>
 
+<div align="center"> 
+    <p style="font-weight:bold;color:#dc3546;">This package is still in development</p>
+</div>
+
+&nbsp;
+
 [![NPM Publish](https://github.com/raflyfahrezi/fahsssy/actions/workflows/npm_publish.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/npm_publish.yml)
 [![Build](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml)
 [![Testing](https://github.com/raflyfahrezi/fahsssy/actions/workflows/testing.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/testing.yml)
