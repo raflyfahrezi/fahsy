@@ -1,4 +1,7 @@
 import Button from './Button'
-import Container from './Container'
+import { ButtonPropsInterface } from './Button/types'
 
-export { Button, Container }
+import Container from './Container'
+import { ContainerPropsInterface } from './Container/types'
+
+export { Button, ButtonPropsInterface, Container, ContainerPropsInterface }

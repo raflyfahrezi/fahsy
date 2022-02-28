@@ -1,11 +1,15 @@
 import React, { forwardRef } from 'react'
 
 import { ContainerRoot } from './styles'
-import { ContainerPropsInterface, ContainerSize } from './types'
+import {
+    ContainerSize,
+    ContainerSizePixelType,
+    ContainerPropsInterface,
+} from './types'
 
 const Container = forwardRef<HTMLDivElement, ContainerPropsInterface>(
     ({ size, children, ...props }: ContainerPropsInterface, ref) => {
-        const getSize = (): string => {
+        const getSize = (): ContainerSizePixelType => {
             switch (size) {
                 case 'xs':
                     return ContainerSize.xs
@@ -21,11 +25,14 @@ const Container = forwardRef<HTMLDivElement, ContainerPropsInterface>(
 
                 case 'full':
                     return ContainerSize.full
+
+                default:
+                    return ContainerSize.md
             }
         }
 
         return (
-            <ContainerRoot ref={ref} size={getSize} {...props}>
+            <ContainerRoot ref={ref} size={getSize()} {...props}>
                 {children}
             </ContainerRoot>
         )
