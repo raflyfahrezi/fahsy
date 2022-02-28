@@ -4,6 +4,12 @@
 
 </div>
 
+<div align="center"> 
+    <p style="font-weight:bold;color:#dc3546;">This package is still in development</p>
+</div>
+
+&nbsp;
+
 [![NPM Publish](https://github.com/raflyfahrezi/fahsssy/actions/workflows/npm_publish.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/npm_publish.yml)
 [![Build](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/build.yml)
 [![Testing](https://github.com/raflyfahrezi/fahsssy/actions/workflows/testing.yml/badge.svg)](https://github.com/raflyfahrezi/fahsssy/actions/workflows/testing.yml)
@@ -22,7 +28,7 @@ npm i fahsssy # for NPM
 yarn add fahsssy # for Yarn
 ```
 
-Here you go. For complete guide using this libraries please read our full documentation at `/docs` folder.
+Here you go. For complete guide using this libraries please read our full documentation at this [Storybook](https://fahsssy.vercel.app/?path=/story/introduction--page).
 
 ## Typography
 
