@@ -6,7 +6,8 @@ export type InputRootStyles = {
 }
 
 // Interface
-export interface InputPropsInterface extends HTMLAttributes<HTMLInputElement> {
+export interface InputPropsInterface
+    extends Omit<HTMLAttributes<HTMLInputElement>, 'children'> {
     label?: string
     fullWidth?: boolean
     type?: HTMLInputTypeAttribute
