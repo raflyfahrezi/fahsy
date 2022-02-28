@@ -5,3 +5,4 @@ import Container from './Container'
 import { ContainerPropsInterface } from './Container/types'
 
 export { Button, ButtonPropsInterface, Container, ContainerPropsInterface }
+export * from './Form'
