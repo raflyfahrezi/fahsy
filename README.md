@@ -22,7 +22,7 @@ npm i fahsssy # for NPM
 yarn add fahsssy # for Yarn
 ```
 
-Here you go. For complete guide using this libraries please read our full documentation at `/docs` folder.
+Here you go. For complete guide using this libraries please read our full documentation at this [Storybook](https://fahsssy.vercel.app/?path=/story/introduction--page).
 
 ## Typography
 
