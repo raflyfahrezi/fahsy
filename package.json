@@ -1,12 +1,12 @@
 {
     "license": "ISC",
-    "name": "fahsssy",
+    "name": "fahsy",
     "version": "1.0.6",
     "types": "dist/index.d.ts",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "author": "Farhan Rafly Fahrezi S <raflyfahr15@gmail.com>",
-    "homepage": "https://github.com/raflyfahrezi/fahsssy#readme",
+    "homepage": "https://github.com/raflyfahrezi/fahsy#readme",
     "description": "Design System for Farhan Rafly Fahrezi S apps ecosystem",
     "files": [
         "dist"
@@ -19,14 +19,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/raflyfahrezi/fahsssy.git"
+        "url": "git+https://github.com/raflyfahrezi/fahsy.git"
     },
     "keywords": [
         "design",
         "system"
     ],
     "bugs": {
-        "url": "https://github.com/raflyfahrezi/fahsssy/issues"
+        "url": "https://github.com/raflyfahrezi/fahsy/issues"
     },
     "devDependencies": {
         "@babel/core": "^7.16.7",
