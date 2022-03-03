@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const babelConfig = {
     presets: [
         '@babel/preset-env',
