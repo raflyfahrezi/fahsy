@@ -1,7 +1,7 @@
 {
     "license": "ISC",
     "name": "fahsy",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "types": "dist/index.d.ts",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
