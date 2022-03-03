@@ -1,12 +1,12 @@
 {
     "license": "ISC",
-    "name": "fahsssy",
+    "name": "fahsy",
     "version": "1.0.6",
     "types": "dist/index.d.ts",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "author": "Farhan Rafly Fahrezi S <raflyfahr15@gmail.com>",
-    "homepage": "https://github.com/raflyfahrezi/fahsssy#readme",
+    "homepage": "https://github.com/raflyfahrezi/fahsy#readme",
     "description": "Design System for Farhan Rafly Fahrezi S apps ecosystem",
     "files": [
         "dist"
@@ -19,14 +19,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/raflyfahrezi/fahsssy.git"
+        "url": "git+https://github.com/raflyfahrezi/fahsy.git"
     },
     "keywords": [
         "design",
         "system"
     ],
     "bugs": {
-        "url": "https://github.com/raflyfahrezi/fahsssy/issues"
+        "url": "https://github.com/raflyfahrezi/fahsy/issues"
     },
     "devDependencies": {
         "@babel/core": "^7.16.7",
@@ -49,7 +49,6 @@
         "@types/react": "^17.0.38",
         "babel-jest": "^27.4.6",
         "babel-loader": "^8.2.3",
-        "babel-plugin-styled-components": "^2.0.6",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.4.7",
         "react": "^17.0.2",
@@ -61,7 +60,12 @@
         "typescript": "^4.5.4"
     },
     "dependencies": {
-        "@types/styled-components": "^5.1.23",
-        "styled-components": "^5.3.3"
+        "@emotion/react": "^11.8.1",
+        "@emotion/styled": "^11.8.1",
+        "rollup-plugin-peer-deps-external": "^2.2.4"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
     }
 }
