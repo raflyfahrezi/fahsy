@@ -1,5 +1,10 @@
 import font from './font'
-import colors from './colors'
-import common from './common'
+import { fontType } from './font/types'
 
-export { font, colors, common }
+import colors from './colors'
+import { colorsType } from './colors/types'
+
+import common from './common'
+import { commonType } from './common/types'
+
+export { font, fontType, colors, colorsType, common, commonType }
