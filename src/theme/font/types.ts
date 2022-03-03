@@ -5,6 +5,7 @@ export type fontSizeType = Record<fontVariantType, string>
 export type fontLineHeightType = Record<fontVariantType, string>
 
 export type fontType = {
+    family: string
     size: fontSizeType
     lineHeight: fontLineHeightType
 }
