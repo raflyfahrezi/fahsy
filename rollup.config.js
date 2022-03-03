@@ -7,13 +7,6 @@ const packageJson = require('./package.json')
 
 export default [
     {
-        external: ['react'],
-        paths: {
-            react: 'react',
-            'react-dom': 'react-dom',
-        },
-    },
-    {
         input: 'src/index.ts',
         output: [
             {
