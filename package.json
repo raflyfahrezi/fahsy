@@ -53,6 +53,7 @@
         "babel-jest": "^27.4.6",
         "babel-loader": "^8.2.3",
         "eslint": "^8.10.0",
+        "eslint-config-prettier": "^8.5.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.4.7",
         "react": "^17.0.2",
