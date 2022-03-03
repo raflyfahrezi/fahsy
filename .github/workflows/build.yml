@@ -23,10 +23,9 @@ jobs:
               with:
                   node-version: '16'
                   check-latest: true
-                  registry-url: 'https://registry.npmjs.org'
 
             - name: Installing Dependencies
               run: yarn install
 
             - name: 'Building Project'
-              run: npm run rollup
+              run: yarn run rollup

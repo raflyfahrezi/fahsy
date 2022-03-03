@@ -1,15 +1,14 @@
 # CI Name
-name: 'Testing'
+name: 'Lint'
 
 # Only running when
 on:
     pull_request:
         branches:
             - master
-            - dev
 
 jobs:
-    testing:
+    lint:
         # Running on latest version of Ubuntu
         runs-on: ubuntu-latest
 
@@ -28,5 +27,5 @@ jobs:
             - name: Installing Dependencies
               run: yarn
 
-            - name: Testing All Source
-              run: yarn run test
+            - name: 'Linting Project'
+              run: yarn run lint
