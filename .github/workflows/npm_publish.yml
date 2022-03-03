@@ -25,12 +25,12 @@ jobs:
                   registry-url: 'https://registry.npmjs.org'
 
             - name: Installing Dependencies
-              run: yarn install
+              run: yarn
 
             - name: 'Building Project'
-              run: npm run rollup
+              run: yarn run rollup
 
             - name: publishing project to NPM
-              run: npm publish
+              run: yarn publish
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
