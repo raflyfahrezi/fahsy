@@ -1,12 +1,12 @@
 import { addDecorator } from '@storybook/react'
 
-import { DefaultStyles } from '../src/styles'
+import { Background, DefaultStyles } from '../src/styles'
 
 addDecorator((story) => {
     return (
         <>
             <DefaultStyles />
-            {story()}
+            <Background>{story()}</Background>
         </>
     )
 })

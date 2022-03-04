@@ -1,3 +1,4 @@
+import Background from './background'
 import DefaultStyles from './defaultStyles'
 
-export { DefaultStyles }
+export { Background, DefaultStyles }
