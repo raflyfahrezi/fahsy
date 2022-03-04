@@ -15,8 +15,8 @@ const colors: colorsType = {
     },
     tertiary: {
         grey: '#B8B8B8',
-        lineStroke: '#F7F7F7',
-        subtleGrey: '#424242',
+        lineStroke: '#424242',
+        subtleGrey: '#F7F7F7',
     },
 }
 
