@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { colors } from '@/theme'
+import { font, colors } from '@/theme'
 
 import Container from './index'
 
@@ -11,6 +11,9 @@ const Template: ComponentStory<typeof Container> = (args) => (
 )
 
 const Paragraph = styled.p`
+    font-family: ${font.family};
+    font-size: ${font.size[16]};
+
     color: ${colors.tertiary.subtleGrey};
 `
 
