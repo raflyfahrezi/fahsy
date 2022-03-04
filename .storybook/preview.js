@@ -1,5 +1,7 @@
 import { addDecorator } from '@storybook/react'
 
+import '@fontsource/open-sans'
+
 import { Background, DefaultStyles } from '../src/styles'
 
 addDecorator((story) => {

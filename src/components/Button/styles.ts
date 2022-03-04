@@ -21,4 +21,5 @@ export const ButtonRoot = styled['button']<ButtonRootStyles>`
 
     font-weight: bold;
     font-size: ${font.size[16]};
+    font-family: ${font.family};
 `
