@@ -8,7 +8,7 @@ export const ButtonRoot = styled['button']<ButtonRootStyles>`
     width: ${(props) => (props.fullWidth ? '100%' : 'auto')};
     min-width: 120px;
 
-    background-color: ${colors.yellow};
+    background-color: ${colors.primary.yellow};
 
     padding: 16px 20px;
 
