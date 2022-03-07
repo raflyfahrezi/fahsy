@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { font, colors, common } from '@/theme'
+import { form, font, colors } from '@/theme'
 
 import { InputRootStyles } from './types'
 
@@ -28,21 +28,21 @@ export const InputInput = styled.input`
 
     padding: 10px 12px;
 
-    color: ${colors.tertiary.subtleGrey};
+    color: ${form.color};
 
-    font-size: ${font.size[16]};
-    font-family: ${font.family};
+    font-size: ${form.fontSize};
+    font-family: ${form.fontFamily};
 
-    border-radius: ${common.borderRadius};
-    border: 2px solid ${colors.tertiary.grey};
+    border: ${form.border};
+    border-radius: ${form.borderRadius};
 
-    background-color: ${colors.primary.subtleBlack};
+    background-color: ${form.backgroundColor};
 
-    outline: none;
+    outline: ${form.outline};
 
-    transition: all 0.2s;
+    transition: ${form.transition};
 
     &:focus {
-        border: 2px solid ${colors.primary.yellow};
+        border: ${form.borderFocus};
     }
 `
