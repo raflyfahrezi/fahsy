@@ -2,10 +2,10 @@ import styled from '@emotion/styled'
 
 import { form } from '@/theme'
 
-export const InputInput = styled.input`
+export const InputRoot = styled.input`
     width: 100%;
 
-    padding: 10px 12px;
+    padding: ${form.padding};
 
     color: ${form.color};
 
