@@ -2,17 +2,6 @@ import styled from '@emotion/styled'
 
 import { form } from '@/theme'
 
-import { InputRootStyles } from './types'
-
-export const InputRoot = styled.div<InputRootStyles>`
-    width: 100%;
-    max-width: ${(props) => (props.fullWidth ? 'none' : '250px')};
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-`
-
 export const InputInput = styled.input`
     width: 100%;
 
