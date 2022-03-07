@@ -15,10 +15,12 @@ export default {
     title: 'Components/Button',
     component: Button,
     args: {
+        disabled: false,
         fullWidth: false,
     },
     argTypes: {
-        fullWidth: { control: { type: 'boolean' } },
         children: { control: false },
+        disabled: { control: { type: 'boolean' } },
+        fullWidth: { control: { type: 'boolean' } },
     },
 } as ComponentMeta<typeof Button>
