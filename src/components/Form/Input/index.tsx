@@ -1,14 +1,15 @@
 import React from 'react'
 
+import FormRoot from '../Root'
+
+import { InputRoot } from './styles'
 import { InputPropsInterface } from './types'
-import { InputRoot, InputLabel, InputInput } from './styles'
 
 const Input = ({ type, label, fullWidth, ...props }: InputPropsInterface) => {
     return (
-        <InputRoot fullWidth={fullWidth}>
-            {label && <InputLabel>{label}</InputLabel>}
-            <InputInput type={type} {...props} />
-        </InputRoot>
+        <FormRoot label={label} fullWidth={fullWidth}>
+            <InputRoot type={type} {...props} />
+        </FormRoot>
     )
 }
 

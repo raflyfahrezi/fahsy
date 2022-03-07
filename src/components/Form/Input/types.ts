@@ -1,14 +1,27 @@
-import { HTMLAttributes, HTMLInputTypeAttribute } from 'react'
+import { HTMLAttributes } from 'react'
 
-// Styles
-export type InputRootStyles = {
-    fullWidth?: boolean
-}
+// Initialization
+export type InputTypeType =
+    | 'button'
+    | 'date'
+    | 'datetime-local'
+    | 'email'
+    | 'month'
+    | 'number'
+    | 'password'
+    | 'reset'
+    | 'search'
+    | 'submit'
+    | 'tel'
+    | 'text'
+    | 'time'
+    | 'url'
+    | 'week'
 
 // Interface
 export interface InputPropsInterface
     extends Omit<HTMLAttributes<HTMLInputElement>, 'children'> {
     label?: string
     fullWidth?: boolean
-    type?: HTMLInputTypeAttribute
+    type?: InputTypeType
 }
