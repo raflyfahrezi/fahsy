@@ -1,4 +1,6 @@
-import { font, colors, common } from '@/theme'
+import font from '../font'
+import colors from '../colors'
+import common from '../common'
 
 import { formType } from './types'
 
