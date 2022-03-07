@@ -45,4 +45,8 @@ export const InputInput = styled.input`
     &:focus {
         border: ${form.borderFocus};
     }
+
+    &::-webkit-calendar-picker-indicator {
+        filter: invert(100%);
+    }
 `
