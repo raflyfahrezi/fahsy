@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { form, font, colors } from '@/theme'
+import { form } from '@/theme'
 
 import { InputRootStyles } from './types'
 
@@ -11,16 +11,6 @@ export const InputRoot = styled.div<InputRootStyles>`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-`
-
-export const InputLabel = styled.label`
-    font-weight: bold;
-    font-size: ${font.size[16]};
-    font-family: ${font.family};
-
-    color: ${colors.tertiary.subtleGrey};
-
-    margin-bottom: 10px;
 `
 
 export const InputInput = styled.input`
