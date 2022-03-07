@@ -18,11 +18,6 @@ export type InputTypeType =
     | 'url'
     | 'week'
 
-// Styles
-export type InputRootStyles = {
-    fullWidth?: boolean
-}
-
 // Interface
 export interface InputPropsInterface
     extends Omit<HTMLAttributes<HTMLInputElement>, 'children'> {
