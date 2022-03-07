@@ -17,11 +17,15 @@ export const ButtonRoot = styled.button<ButtonRootStyles>`
 
     outline: none;
 
-    cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
+    cursor: pointer;
 
     font-weight: bold;
     font-size: ${font.size[16]};
     font-family: ${font.family};
 
     transition: all 0.3s;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
 `
