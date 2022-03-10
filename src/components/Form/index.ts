@@ -7,6 +7,9 @@ import { LabelPropsInterface } from './Label/types'
 import Select from './Select'
 import { SelectPropsInterface } from './Select/types'
 
+import Radio from './Radio'
+import { RadioPropsInterface, RadioOptionsType } from './Radio/types'
+
 export {
     Input,
     InputPropsInterface,
@@ -14,4 +17,7 @@ export {
     SelectPropsInterface,
     Label,
     LabelPropsInterface,
+    Radio,
+    RadioOptionsType,
+    RadioPropsInterface,
 }
