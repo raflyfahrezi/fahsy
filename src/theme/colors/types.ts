@@ -3,12 +3,24 @@ export type colorsPrimaryType = 'black' | 'yellow' | 'subtleBlack'
 
 export type colorsSecondaryType =
     | 'red'
+    | 'lightRed'
+    | 'subtleRed'
     | 'green'
     | 'darkGreen'
-    | 'subtleRed'
+    | 'blue'
+    | 'darkBlue'
+    | 'white'
+    | 'orange'
+    | 'purple'
     | 'darkYellow'
 
-export type colorsTertiaryType = 'grey' | 'subtleGrey' | 'lineStroke'
+export type colorsTertiaryType =
+    | 'grey'
+    | 'subtleGrey'
+    | 'darkGrey'
+    | 'lightBlack'
+    | 'darkerBlack'
+    | 'lineStroke'
 
 export type colorsPrimaryRecord = Record<colorsPrimaryType, string>
 
