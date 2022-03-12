@@ -23,9 +23,17 @@ export const ButtonRoot = styled.button<ButtonRootStyles>`
     font-size: ${font.size[16]};
     font-family: ${font.family};
 
-    transition: all 0.3s;
+    transition: all 0.1s;
 
     &:disabled {
         cursor: not-allowed;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:hover {
+        background-color: ${colors.system.yellow[4]};
     }
 `
