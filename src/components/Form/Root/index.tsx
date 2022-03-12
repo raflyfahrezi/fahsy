@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 import Label from '../Label'
 
 import { FormRootRoot } from './styles'
 import { FormRootPropsInterface } from './types'
 
-const FormRoot = ({ label, children, fullWidth }: FormRootPropsInterface) => {
-    return (
-        <FormRootRoot fullWidth={fullWidth}>
-            {label && <Label>{label}</Label>}
-            <>{children}</>
-        </FormRootRoot>
-    )
-}
+const FormRoot = forwardRef<HTMLDivElement, FormRootPropsInterface>(
+    ({ label, children, fullWidth }: FormRootPropsInterface, ref) => {
+        return (
+            <FormRootRoot ref={ref} fullWidth={fullWidth}>
+                {label && <Label>{label}</Label>}
+                <>{children}</>
+            </FormRootRoot>
+        )
+    }
+)
 
 export default FormRoot

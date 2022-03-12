@@ -8,7 +8,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 export const Primary = Template.bind({})
 
 Primary.args = {
-    children: <p>Hello World</p>,
+    children: <p>Button</p>,
 }
 
 export default {

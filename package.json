@@ -72,7 +72,8 @@
     },
     "dependencies": {
         "@emotion/react": "^11.8.1",
-        "@emotion/styled": "^11.8.1"
+        "@emotion/styled": "^11.8.1",
+        "framer-motion": "^6.2.8"
     },
     "peerDependencies": {
         "@fontsource/open-sans": "^4.5.5",
