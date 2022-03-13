@@ -4,13 +4,22 @@ import { ButtonRoot } from './styles'
 import { ButtonPropsInterface } from './types'
 
 const Button = forwardRef<HTMLButtonElement, ButtonPropsInterface>(
-    ({ children, fullWidth, ...rest }: ButtonPropsInterface, ref) => {
+    ({ variant, children, fullWidth, ...rest }: ButtonPropsInterface, ref) => {
         return (
-            <ButtonRoot ref={ref} fullWidth={fullWidth} {...rest}>
+            <ButtonRoot
+                ref={ref}
+                variant={variant}
+                fullWidth={fullWidth}
+                {...rest}
+            >
                 {children}
             </ButtonRoot>
         )
     }
 )
+
+Button.defaultProps = {
+    variant: 'primary',
+}
 
 export default Button
