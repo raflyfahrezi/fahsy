@@ -8,6 +8,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 export const Primary = Template.bind({})
 export const Secondary = Template.bind({})
 export const Tertiary = Template.bind({})
+export const Affirmative = Template.bind({})
 
 Primary.args = {
     children: <p>Button</p>,
@@ -20,6 +21,11 @@ Secondary.args = {
 
 Tertiary.args = {
     variant: 'tertiary',
+    children: <p>Button</p>,
+}
+
+Affirmative.args = {
+    variant: 'affirmative',
     children: <p>Button</p>,
 }
 
