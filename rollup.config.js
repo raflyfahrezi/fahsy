@@ -9,7 +9,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 
 const packageJson = require('./package.json')
 
-export default [
+const rollupConfig = [
     {
         input: 'src/index.ts',
         output: [
@@ -37,3 +37,5 @@ export default [
         output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     },
 ]
+
+export default rollupConfig
