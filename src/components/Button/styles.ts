@@ -97,8 +97,12 @@ export const ButtonRoot = styled.button<ButtonRootStyles>`
     ${(props) => props.variant === 'danger' && ButtonVariantDanger}
 
     &:disabled {
-        color: #cea337;
-
         cursor: not-allowed;
+
+        color: ${colors.tertiary.darkGrey};
+
+        border: 2px solid ${colors.system.black[4]};
+
+        background-color: ${colors.system.black[4]};
     }
 `
