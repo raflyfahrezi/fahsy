@@ -1,7 +1,12 @@
 import { HTMLAttributes } from 'react'
 
 // Type
-export type ButtonVariantType = 'primary' | 'secondary'
+export type ButtonVariantType =
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | 'affirmative'
+    | 'danger'
 
 // Styles
 export type ButtonRootStyles = {
