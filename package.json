@@ -77,7 +77,7 @@
         "framer-motion": "^6.2.8"
     },
     "peerDependencies": {
-        "@fontsource/open-sans": "^4.5.5",
+        "@fontsource/poppins": "^4.5.3",
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
     }
