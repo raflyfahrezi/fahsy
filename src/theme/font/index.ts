@@ -24,7 +24,7 @@ const fontLineHeight: fontLineHeightType = {
 
 const font: fontType = {
     size: fontSize,
-    family: '"Open Sans"',
+    family: 'Poppins',
     lineHeight: fontLineHeight,
 }
 
