@@ -1562,11 +1562,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/open-sans@^4.5.5":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.5.tgz#f42ede921cc807cf7b96896691348d75dafbf70c"
-  integrity sha512-h1oUPSQpoMnDrnzIZTVS9PPBFhWXS87v6/cd9FY2Xc+GKbOVcjPZxcvUDU1TnCie2QSoYY9aifERRV/d8JHtWQ==
-
 "@fontsource/poppins@^4.5.3":
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.3.tgz#0d50e7c48cac6dab2b76d7e711001256875cc2b0"
