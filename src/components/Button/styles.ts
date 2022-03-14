@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 
-import { font, colors } from '@/theme'
+import { font, common, colors } from '@/theme'
 
 import { ButtonRootStyles } from './types'
 
@@ -27,6 +27,18 @@ export const ButtonVariantSecondary = () => css`
     }
 `
 
+export const ButtonVariantTertiary = () => css`
+    color: ${colors.secondary.white};
+
+    background-color: ${colors.primary.black};
+
+    border: 2px solid ${colors.system.black[5]};
+
+    &:hover {
+        background-color: ${colors.system.black[5]};
+    }
+`
+
 export const ButtonRoot = styled.button<ButtonRootStyles>`
     width: ${(props) => (props.fullWidth ? '100%' : 'auto')};
     min-width: 120px;
@@ -34,7 +46,7 @@ export const ButtonRoot = styled.button<ButtonRootStyles>`
     padding: 12px 20px;
 
     border: 2px solid ${colors.primary.yellow};
-    border-radius: 6px;
+    border-radius: ${common.borderRadius};
 
     outline: none;
 
@@ -46,10 +58,11 @@ export const ButtonRoot = styled.button<ButtonRootStyles>`
 
     transition: all 0.5s;
 
-    ${(props) =>
-        props.variant === 'primary'
-            ? ButtonVariantPrimary
-            : ButtonVariantSecondary}
+    ${(props) => props.variant === 'primary' && ButtonVariantPrimary}
+
+    ${(props) => props.variant === 'secondary' && ButtonVariantSecondary}
+
+    ${(props) => props.variant === 'tertiary' && ButtonVariantTertiary}
 
     &:disabled {
         color: #cea337;
