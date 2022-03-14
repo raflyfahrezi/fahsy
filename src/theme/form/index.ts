@@ -5,7 +5,7 @@ import common from '../common'
 import { formType } from './types'
 
 const form: formType = {
-    padding: '10px 12px',
+    padding: '12px 15px',
     color: colors.tertiary.subtleGrey,
 
     fontSize: font.size[16],
