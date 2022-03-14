@@ -1,6 +1,6 @@
 import { addDecorator } from '@storybook/react'
 
-import '@fontsource/open-sans'
+import '@fontsource/poppins'
 
 import { Background, DefaultStyles } from '../src/styles'
 

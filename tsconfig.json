@@ -8,12 +8,15 @@
         "forceConsistentCasingInFileNames": true,
 
         // Added
+        "rootDir": "src", // from rollup multi input
+        "isolatedModules": false, // from rollup multi input
         "jsx": "react",
         "outDir": "dist",
         "sourceMap": true,
         "module": "ESNext",
         "declaration": true,
-        "declarationDir": "types",
+        "declarationDir": "dist", // from rollup multi input
+        // "declarationDir": "types",
         "moduleResolution": "node",
         "emitDeclarationOnly": true,
         "allowSyntheticDefaultImports": true,

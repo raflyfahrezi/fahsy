@@ -7,7 +7,6 @@ export const LabelRoot = styled.label`
 
     color: ${colors.tertiary.subtleGrey};
 
-    font-weight: bold;
     font-size: ${font.size[16]};
     font-family: ${font.family};
 `
