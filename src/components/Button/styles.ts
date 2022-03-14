@@ -39,6 +39,20 @@ export const ButtonVariantTertiary = () => css`
     }
 `
 
+export const ButtonVariantAffirmative = () => css`
+    color: ${colors.secondary.white};
+
+    border: 2px solid ${colors.system.green[4]};
+
+    background-color: ${colors.system.green[4]};
+
+    &:hover {
+        border: 2px solid ${colors.system.green[1]};
+
+        background-color: ${colors.system.green[1]};
+    }
+`
+
 export const ButtonRoot = styled.button<ButtonRootStyles>`
     width: ${(props) => (props.fullWidth ? '100%' : 'auto')};
     min-width: 120px;
@@ -63,6 +77,8 @@ export const ButtonRoot = styled.button<ButtonRootStyles>`
     ${(props) => props.variant === 'secondary' && ButtonVariantSecondary}
 
     ${(props) => props.variant === 'tertiary' && ButtonVariantTertiary}
+
+    ${(props) => props.variant === 'affirmative' && ButtonVariantAffirmative}
 
     &:disabled {
         color: #cea337;
