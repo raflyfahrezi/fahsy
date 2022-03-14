@@ -60,4 +60,4 @@ const newRollupConfig = [
     },
 ]
 
-export default newRollupConfig
+export default rollupConfig
