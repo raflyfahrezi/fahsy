@@ -9,6 +9,7 @@ export const Primary = Template.bind({})
 export const Secondary = Template.bind({})
 export const Tertiary = Template.bind({})
 export const Affirmative = Template.bind({})
+export const Danger = Template.bind({})
 
 Primary.args = {
     children: <p>Button</p>,
@@ -26,6 +27,11 @@ Tertiary.args = {
 
 Affirmative.args = {
     variant: 'affirmative',
+    children: <p>Button</p>,
+}
+
+Danger.args = {
+    variant: 'danger',
     children: <p>Button</p>,
 }
 
