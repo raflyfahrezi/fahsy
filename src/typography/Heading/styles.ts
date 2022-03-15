@@ -5,6 +5,7 @@ import { font, colors } from '@/theme'
 
 export const HeadingBase = () => css`
     font-weight: bold;
+    font-family: ${font.family};
 
     color: ${colors.secondary.white};
 `
