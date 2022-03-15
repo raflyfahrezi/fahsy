@@ -4,8 +4,12 @@ import { ParagraphRoot } from './styles'
 import { ParagraphPropsInterface } from './types'
 
 const Paragraph = forwardRef<HTMLParagraphElement, ParagraphPropsInterface>(
-    ({ children, ...rest }: ParagraphPropsInterface) => {
-        return <ParagraphRoot {...rest}>{children}</ParagraphRoot>
+    ({ children, ...rest }: ParagraphPropsInterface, ref) => {
+        return (
+            <ParagraphRoot ref={ref} {...rest}>
+                {children}
+            </ParagraphRoot>
+        )
     }
 )
 
