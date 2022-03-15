@@ -1,25 +1,35 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { colors } from '@/theme'
-
 import Fahrezis from './index'
 
-const Template: ComponentStory<typeof Fahrezis> = () => (
+const Template: ComponentStory<typeof Fahrezis> = (args) => (
     <div style={{ maxWidth: '100px' }}>
-        <Fahrezis />
+        <Fahrezis {...args} />
     </div>
 )
 
-export const Primary = Template.bind({})
+export const Grey = Template.bind({})
+export const Yellow = Template.bind({})
 
-Primary.args = {}
+Grey.args = {
+    type: 'gray',
+}
+
+Yellow.args = {
+    type: 'yellow',
+}
 
 export default {
     title: 'Assets/Fahrezis',
     component: Fahrezis,
     args: {
-        color: colors.primary.yellow,
+        type: 'gray',
     },
-    argTypes: {},
+    argTypes: {
+        type: {
+            options: ['gray', 'yellow'],
+            control: { type: 'select' },
+        },
+    },
 } as ComponentMeta<typeof Fahrezis>
