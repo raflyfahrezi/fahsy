@@ -4,10 +4,13 @@ import React from 'react'
 
 import { Svg } from '@/components'
 
-const icon = require('./icon.svg') as string
+import { FahrezisIconProps } from './types'
 
-const FahrezisIcon = () => {
-    return <Svg path={icon} />
+const iconGray = require('./icon-gray.svg') as string
+const iconYellow = require('./icon-yellow.svg') as string
+
+const FahrezisIcon = ({ type }: FahrezisIconProps) => {
+    return <Svg path={type === 'gray' ? iconGray : iconYellow} />
 }
 
 export default FahrezisIcon
