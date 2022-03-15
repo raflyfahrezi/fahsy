@@ -1,13 +1,14 @@
 import React, { forwardRef } from 'react'
 
+import { Heading2Root } from '../styles'
 import { HeadingPropsInterface } from '../types'
 
 const Heading2 = forwardRef<HTMLHeadingElement, HeadingPropsInterface>(
     ({ children, ...rest }: HeadingPropsInterface, ref) => {
         return (
-            <h2 ref={ref} {...rest}>
+            <Heading2Root ref={ref} {...rest}>
                 {children}
-            </h2>
+            </Heading2Root>
         )
     }
 )
