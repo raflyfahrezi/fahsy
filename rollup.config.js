@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 import dts from 'rollup-plugin-dts'
+import svg from 'rollup-plugin-svg-import'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import multiInput from 'rollup-plugin-multi-input'
@@ -30,6 +31,7 @@ const rollupConfig = [
             resolve(),
             commonjs(),
             peerDepsExternal(),
+            svg({ stringify: true }),
             typescript({ tsconfig: './tsconfig.json' }),
         ],
     },
