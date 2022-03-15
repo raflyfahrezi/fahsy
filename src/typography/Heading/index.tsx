@@ -1,7 +1,5 @@
-import React from 'react'
+import Heading1 from './Heading1'
+import Heading2 from './Heading2'
+import Heading3 from './Heading3'
 
-const Heading = () => {
-    return <div>Heading</div>
-}
-
-export default Heading
+export { Heading1, Heading2, Heading3 }
