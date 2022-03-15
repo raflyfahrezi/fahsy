@@ -11,6 +11,8 @@ export const HeadingBase = () => css`
 `
 
 export const Heading1Root = styled.h1`
+    ${HeadingBase}
+
     font-size: ${font.size[56]};
 
     line-height: ${font.lineHeight[56]};
@@ -23,6 +25,8 @@ export const Heading1Root = styled.h1`
 `
 
 export const Heading2Root = styled.h2`
+    ${HeadingBase}
+
     font-size: ${font.size[48]};
 
     line-height: ${font.lineHeight[48]};
@@ -35,6 +39,8 @@ export const Heading2Root = styled.h2`
 `
 
 export const Heading3Root = styled.h3`
+    ${HeadingBase}
+
     font-size: ${font.size[36]};
 
     line-height: ${font.lineHeight[36]};
