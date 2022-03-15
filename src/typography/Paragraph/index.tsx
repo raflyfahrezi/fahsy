@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const Paragraph = () => {
-    return <div>Paragraph</div>
-}
+import { ParagraphRoot } from './styles'
+import { ParagraphPropsInterface } from './types'
+
+const Paragraph = forwardRef<HTMLParagraphElement, ParagraphPropsInterface>(
+    ({ children, ...rest }: ParagraphPropsInterface) => {
+        return <ParagraphRoot {...rest}>{children}</ParagraphRoot>
+    }
+)
 
 export default Paragraph
