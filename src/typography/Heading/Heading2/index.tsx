@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const Heading2 = () => {
-    return <div>Heading2</div>
-}
+import { HeadingPropsInterface } from '../types'
+
+const Heading2 = forwardRef<HTMLHeadingElement, HeadingPropsInterface>(
+    ({ children, ...rest }: HeadingPropsInterface, ref) => {
+        return (
+            <h2 ref={ref} {...rest}>
+                {children}
+            </h2>
+        )
+    }
+)
 
 export default Heading2
