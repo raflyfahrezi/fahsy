@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 
-import { ContainerRoot } from './styles'
+import { ContainerRoot, ContainerContent } from './styles'
 import {
     ContainerSize,
     ContainerSizePixelType,
@@ -32,8 +32,10 @@ const Container = forwardRef<HTMLDivElement, ContainerPropsInterface>(
         }
 
         return (
-            <ContainerRoot ref={ref} size={getSize()} {...props}>
-                {children}
+            <ContainerRoot ref={ref}>
+                <ContainerContent size={getSize()} {...props}>
+                    {children}
+                </ContainerContent>
             </ContainerRoot>
         )
     }
